@@ -39,6 +39,9 @@ startButton.addEventListener("click", function () {
 
 //Pause timer
 pauseButton.addEventListener("click", function () {
+  if (currentTaskLabel.value === "") {
+    return;
+  }
   isClockRunning = true;
   toggleClock();
   pauseAnimation();
@@ -46,6 +49,9 @@ pauseButton.addEventListener("click", function () {
 
 //Stop timer
 stopButton.addEventListener("click", function () {
+  if (currentTaskLabel.value === "") {
+    return;
+  }
   toggleClock(true);
   stopAnimation();
   currentTaskLabel.value = "";
