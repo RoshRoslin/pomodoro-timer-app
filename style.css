@@ -77,8 +77,9 @@ button {
 
 #task-input-div input {
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 #task-select-div {
@@ -101,8 +102,9 @@ button {
   margin-top: 20px;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 10px;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 #tooltip {
@@ -118,24 +120,6 @@ button {
 .show {
   opacity: 1;
 }
-
-/* .gradient-circle {
-  background: conic-gradient(
-    #2b97c2 0%,
-    #194353 40%,
-    #fff 40%,
-    #fff 60%,
-    #2b97c2 60%,
-    #194353 100%
-  );
-  height: 320px;
-  width: 320px;
-  z-index: -2;
-  border-radius: 50%;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-} */
 
 .pointer {
   background-color: #fff;
