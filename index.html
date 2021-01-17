@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="text">Pomodoro Timer</h1>
+    </div>
+    <div class="container" id="pomodoro-container">
+      <div id="pomodoro-clock">
+        <div id="pomodoro-timer">
+          <h2>0:00</h2>
+        </div>
+      </div>
+
+      <div class="circle"></div>
+      <div class="pointer-container">
+        <span class="pointer"></span>
+      </div>
+    </div>
+    <div id="task-select-div">
+      <label for="task-or-break" id="task-or-break-label">Task or Break?</label>
+      <br />
+      <select name="taskorbreak" id="task-or-break-select">
+        <option value="task">Task</option>
+        <option value="break">Break</option>
+      </select>
+    </div>
+    <div id="task-input-div">
+      <input
+        type="text"
+        id="pomodoro-clock-task"
+        placeholder="Enter your task title..."
+      />
+      <br />
+      <div id="tooltip" class="hide">Please enter a title</div>
+    </div>
+
+    <div id="pomodoro-clock-actions">
+      <button id="pomodoro-start">Start</button>
+      <button id="pomodoro-pause">Pause</button>
+      <button id="pomodoro-stop">Stop/Reset</button>
+    </div>
+
+    <div id="pomodoro-info">
+      <h3>Your Work/Break Sessions</h3>
+      <ul id="pomodoro-sessions"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
